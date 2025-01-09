@@ -3,90 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Fan Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Single Navigation Button Slider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <img src="marvel banner.jpg" alt="Marvel Cinematic Universe Banner" class="hero-image">
-        <div class="hero-content">  
-        </div>
-    </header>
+    <div class="slider-container">
+        <!-- Radio Buttons -->
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+        <input type="radio" name="slider" id="slide6">
 
-    <section class="name">
-        <h1>Marvel Cinematic Universe</h1>
-        <p class="tagline">"Heroes. Assemble!"</p>
-    </section>
-
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Marvel's Story</h2>
-        <p>
-            The Marvel Cinematic Universe (MCU) began its journey in 2008 with the release of "Iron Man", marking the birth of a global franchise that would change the landscape of superhero films forever. The MCU has grown into an interconnected web of heroes, villains, and stories, with each movie building on the other. It is a testament to the power of storytelling, and its impact on pop culture is undeniable.
-        </p>
-        <p>
-            The MCU’s saga has seen the rise of beloved characters like Iron Man, Captain America, Black Panther, and Spider-Man, alongside iconic groups like the Avengers and Guardians of the Galaxy. From the groundbreaking visual effects to the complex character arcs, the MCU has revolutionized the superhero genre, blending epic action with deep emotional storytelling.
-        </p>
-        <p>
-            With over 30 films, multiple Disney+ series, and characters that resonate with fans worldwide, the MCU continues to innovate and evolve, telling tales of bravery, heroism, and self-discovery. Its legacy will continue to inspire generations to come, reminding us that heroes exist both in the stories we tell and in the real world.
-        </p>
-    </section>
-    <!-- Featured Movies/Shows Section -->
-    <section class="featured">
-        <h2>Featured Movies</h2>
-        <div class="movies-grid">
-            <div class="movie">
-                <img src="Iron Man.jpg" alt="Iron Man Poster">
-                <h3>Iron Man</h3>
-                <p>The story of Tony Stark, a billionaire genius who becomes a hero with his advanced armor.</p>
+        <!-- Slides -->
+        <div class="slider">
+            <div class="slide">
+                <img src="1.jpg" alt=" 1">
             </div>
-            <div class="movie">
-                <img src="The Avengers.jpg" alt="The Avengers Poster">
-                <h3>The Avengers</h3>
-                <p>Earth's mightiest heroes join forces to battle Loki and the Chitauri invasion.</p>
+            <div class="slide">
+                <img src="2.jpg" alt=" 2">
             </div>
-            <div class="movie">
-                <img src="Black Panther.jpg" alt="Black Panther Poster">
-                <h3>Black Panther</h3>
-                <p>Explore the rich culture and advanced technology of Wakanda with King T'Challa.</p>
+            <div class="slide">
+                <img src="3.jpg" alt=" 3">
             </div>
-            <div class="movie">
-                <img src="Avengers Endgame.jpg" alt="Avengers: Endgame Poster">
-                <h3>Avengers: Endgame</h3>
-                <p>The epic conclusion of the Infinity Saga as the Avengers face Thanos in a final showdown.</p>
+            <div class="slide">
+                <img src="4.jpg" alt=" 4">
             </div>
-            <div class="movie">
-                <img src="Captain America The First Avenger.jpg" alt="Captain America: The First Avenger Poster">
-                <h3>Captain America: The First Avenger</h3>
-                <p>Steve Rogers becomes the iconic hero Captain America during World War II.</p>
+            <div class="slide">
+                <img src="5.jpg" alt=" 5">
             </div>
-            <div class="movie">
-                <img src="Thor.jpg" alt="Thor Poster">
-                <h3>Thor</h3>
-                <p>The mighty Thor learns humility as he battles to reclaim his hammer, Mjölnir.</p>
-            </div>
-            <div class="movie">
-                <img src="Guardians of the Galaxy.jpg" alt="Guardians of the Galaxy Poster">
-                <h3>Guardians of the Galaxy</h3>
-                <p>A ragtag group of intergalactic misfits band together to save the galaxy.</p>
-            </div>
-            <div class="movie">
-                <img src="Doctor Strange.jpg" alt="Doctor Strange Poster">
-                <h3>Doctor Strange</h3>
-                <p>Dr. Stephen Strange discovers the mystic arts and defends reality itself.</p>
-            </div>
-            <div class="movie">
-                <img src="Spider-Man No Way Home.jpg" alt="Spider-Man: No Way Home Poster">
-                <h3>Spider-Man: No Way Home</h3>
-                <p>Peter Parker seeks help from Doctor Strange to erase everyone's memory of Spider-Man's identity, but things go wrong.</p>
-            </div>
-            <div class="movie">
-                <img src="Eternals.jpg" alt="Eternals Poster">
-                <h3>Eternals</h3>
-                <p>A group of immortal beings with superhuman powers have secretly lived on Earth for thousands of years, guiding humanity.</p>
+            <div class="slide">
+                <img src="6.jpg" alt=" 6">
             </div>
         </div>
-    </section>
+
+        <!-- Navigation Button -->
+        <div class="navigation">
+            <label class="next" for="slide1">&#10095;</label>
+            <label class="next" for="slide2">&#10095;</label>
+            <label class="next" for="slide3">&#10095;</label>
+            <label class="next" for="slide4">&#10095;</label>
+            <label class="next" for="slide5">&#10095;</label>
+            <label class="next" for="slide6">&#10095;</label>
+            
+        </div>
+    </div>
 </body>
 </html>

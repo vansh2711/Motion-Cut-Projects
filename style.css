@@ -1,0 +1,122 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 600%; /* 6 slides */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Slide Transitions */
+#slide1:checked ~ .slider {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slider {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slider {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slider {
+    transform: translateX(-300%);
+}
+
+#slide5:checked ~ .slider {
+    transform: translateX(-400%);
+}
+
+#slide6:checked ~ .slider {
+    transform: translateX(-500%);
+}
+
+/* Navigation Button */
+.navigation {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+}
+
+.next {
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Display Dynamic Buttons */
+#slide1:checked ~ .navigation label:nth-child(2),
+#slide2:checked ~ .navigation label:nth-child(3),
+#slide3:checked ~ .navigation label:nth-child(4),
+#slide4:checked ~ .navigation label:nth-child(5),
+#slide5:checked ~ .navigation label:nth-child(6),
+#slide6:checked ~ .navigation label:nth-child(1) {
+    display: block;
+}
+
+.navigation label {
+    display: none;
+}
+
+
+.prev {
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Display Dynamic Buttons */
+#slide1:checked ~ .navigation label:nth-child(2),
+#slide2:checked ~ .navigation label:nth-child(3),
+#slide3:checked ~ .navigation label:nth-child(4),
+#slide4:checked ~ .navigation label:nth-child(5),
+#slide5:checked ~ .navigation label:nth-child(6),
+#slide6:checked ~ .navigation label:nth-child(1) {
+    display: block;
+}
+
+.navigation label {
+    display: none;
+}
